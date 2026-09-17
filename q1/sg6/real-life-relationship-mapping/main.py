@@ -1,0 +1,1 @@
+# Write a short Python code snippet showing a Course adding a Student object to a list. 
