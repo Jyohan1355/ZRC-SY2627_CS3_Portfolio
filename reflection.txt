@@ -1,0 +1,12 @@
+Reflection Question:
+How does using @property make your code easier to read compared to using
+traditional get_ and set_ methods?
+
+Answer:
+With @property, I can read and update a private attribute using the plain
+attribute style, e.g. `rectangle.width` and `rectangle.width = 10`, instead of
+`rectangle.get_width()` and `rectangle.set_width(10)`. There are no extra
+parentheses or get_/set_ prefixes, so the code looks like ordinary variable
+use and is shorter and cleaner. The validation still runs inside the setter,
+so the data stays protected. If a plain attribute is later turned into a
+validated property, the code that uses the class does not need to change.
