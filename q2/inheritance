@@ -1,0 +1,45 @@
+class PSHS_Galaxy:
+    def __init__(self, name):
+        self.name = name
+    def introduce(self):
+        print(f"Hello, I am from {self.name}.")     
+    
+class Nationality(PSHS_Galaxy):
+    def __init__(self, name, nationality):
+        super().__init__(name)
+        self.nationality = nationality
+    def introduce(self):
+        print(f"Hello, I am from {self.name} and my nationality is {self.nationality}.")
+    
+class Alien(PSHS_Galaxy):
+    def __init__(self, name, planet):
+        super().__init__(name)
+        self.planet = planet
+    def introduce(self):
+        print(f"Hello, I am from {self.name} and I am from the planet {self.planet}.")
+
+class Filipino(Nationality):
+    def __init__(self, name):
+        super().__init__(name, "Filipino")
+
+class Spaniard(Nationality):
+    def __init__(self, name):
+        super().__init__(name, "Spaniard")  
+
+class Indonesian(Nationality):
+    def __init__(self, name):
+        super().__init__(name, "Indonesian")    
+      
+class avenger(Alien):
+    def __init__(self, name):
+        super().__init__(name, "avenger")
+
+class marvel(Alien):
+    def __init__(self, name):
+        super().__init__(name, "marvel")
+
+Filipino("Jerolf").introduce()
+Spaniard("Ramos").introduce()
+Indonesian("Beta").introduce()
+avenger("Hulk").introduce()
+marvel("Spider-Man").introduce()
