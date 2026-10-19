@@ -1,0 +1,2 @@
+1. A parent class is the foundational class in object-oriented programming from which other classes inherit attributes and methods.
+2.An Intern class should be placed as a direct subclass under the Employee base class. Because it satisfies the core principle of object-oriented design known as the "Is-A" relationship.
